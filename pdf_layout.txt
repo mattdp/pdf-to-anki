@@ -1,0 +1,31 @@
+Hello Kei who I will see in a few hours! These decks are not alternating/regular, so any logic like "take one page, put on front, take next page, put on back" won't work. There might be a way to make it work with how certain phrases like "copyright" or the title of the deck show up on question cards and not answer cards in all decks i checked.
+
+I think the next step will be to hand-code a deck of one card with an image on the front and multiple images on the back. If that works, then we can see if the word "copyright", which is on most ? cards, is detectable by a PDF converter. If both of those things work than what you want should be possible.
+
+Miss you lots, and see you later!
+
+--
+
+"Copyright" and variants might work
+
+--
+
+Anatomic Sciences - not a regular pattern, all have "ANATOMIC SCIENCES" in some fashion though
+Q 1, A 2-4
+Q 5, A 6-7
+Q 8, A 9-11
+Q 12, A 13-15
+Q 16, A 17
+Q 18, A 19
+..
+Q 332, A 333-336
+
+Microbiology/Pathology - seems regular, odds are questions
+
+Biochemistry-Physiology - not regular
+..
+Q 141, A 142-143
+
+Part I New Style Questions
+very different format
+copyright still there though
