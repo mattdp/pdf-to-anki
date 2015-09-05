@@ -1,0 +1,12 @@
+Run program
+
+Place the images in the Anki Media folder.
+  Navigate, in my case, to /Users/matt/Documents/Anki/User 1/collection.media
+  Paste in all images from "Output" folder
+
+Upload CSV of the deck
+  Open Anki
+  Import file, as ~ "Text separated by commas"
+  Type: Basic
+  Allow HTML in fields: Yes
+  Field 1 mapped to front, Field 2 mapped to back

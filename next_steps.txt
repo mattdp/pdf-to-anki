@@ -18,6 +18,19 @@
 [] write a little guide for self/kei on how to load into Anki
 
 
+[x] test on Kei computer/phone, see if works
+[] need to improve resolution
+
+
+
+
+
+
+
+
+
+
+
 [] plan and implement the rest
 
 check out PDF -> Anki for Kei, https://www.dropbox.com/sh/oycawjrguqz5yps/AAC2CO-iktt6BB_LJ0zbfrd4a/Dental%20Decks%202013%3A14?dl=0; see pinboard tags on relevant stuff. seems best to find way of pdf->image for ruby, then munge into anki deck format using python and linux code as a guide
@@ -27,3 +40,4 @@ check out PDF -> Anki for Kei, https://www.dropbox.com/sh/oycawjrguqz5yps/AAC2CO
 2 hours coding sometime
 1 hour imagemagick
 9/3 15m imagemagick
+9/5 90m low-resolution version working!!!
