@@ -43,7 +43,12 @@ pdfs.each do |individual_pdf|
   #create CSV for export, referring to what images will be called
 
   puts "Reading in PDF" if verbose
-  image_reader = Magick::Image.read(full_path)
+  image_reader = Magick::Image.read(full_path) do 
+    self.format = 'PDF'
+    self.quality = 100
+    self.density = 144
+  end
+  binding.pry
   puts "Beginning csv and image creation" if verbose
   (0..is_question.length-1).each do |n|
     if is_question[n]
