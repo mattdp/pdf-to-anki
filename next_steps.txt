@@ -18,7 +18,7 @@
 [] write a little guide for self/kei on how to load into Anki
 
 [x] test on Kei computer/phone, see if works
-[] need to improve resolution
+[x] need to improve resolution
   density?
     http://www.imagemagick.org/discourse-server/viewtopic.php?t=16045
   

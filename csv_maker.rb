@@ -11,12 +11,11 @@ relative_input_directory = "../raw_pdfs/"
 relative_output_directory = "../output/"
 pdfs = Dir.entries(relative_input_directory)
 
-#PDF READER NOT WORKING, NEED THAT UP BEFORE MOVING FORWARD
-
 pdfs.each do |individual_pdf|
 
   #for easy development; remove to do each one
-  next unless individual_pdf == "Ethics .pdf"
+  next if individual_pdf == "Ethics .pdf"
+  next if individual_pdf[0] == '.'
 
   full_path = "#{relative_input_directory}#{individual_pdf}"
   no_suffix_file_name = "#{individual_pdf[0...-4]}"
@@ -48,7 +47,6 @@ pdfs.each do |individual_pdf|
     self.quality = 100
     self.density = 144
   end
-  binding.pry
   puts "Beginning csv and image creation" if verbose
   (0..is_question.length-1).each do |n|
     if is_question[n]
