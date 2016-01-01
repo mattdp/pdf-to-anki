@@ -13,8 +13,6 @@ pdfs = Dir.entries(relative_input_directory)
 
 pdfs.each do |individual_pdf|
 
-  #for easy development; remove to do each one
-  next if individual_pdf == "Ethics .pdf"
   next if individual_pdf[0] == '.'
 
   full_path = "#{relative_input_directory}#{individual_pdf}"
@@ -29,6 +27,7 @@ pdfs.each do |individual_pdf|
 
   text_reader.pages.each do |page|
     text = page.text
+    #latter is a detection issue in PDFs I used
     if (text.include?("copyright") or text.include?("copynght"))
       is_question[counter] = true
     else
