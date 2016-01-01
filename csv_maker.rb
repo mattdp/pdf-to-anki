@@ -2,10 +2,11 @@
 
 require 'pdf-reader'
 require 'RMagick'
-require 'pry'
 
 image_suffix = ".jpg"
 verbose = true
+#latter spelling is a detection issue in PDFs I used
+question_page_if_contains = ["copyright","copynght"]
 
 relative_input_directory = "../raw_pdfs/"
 relative_output_directory = "../output/"
@@ -27,8 +28,7 @@ pdfs.each do |individual_pdf|
 
   text_reader.pages.each do |page|
     text = page.text
-    #latter is a detection issue in PDFs I used
-    if (text.include?("copyright") or text.include?("copynght"))
+    if question_page_if_contains.include?(text)
       is_question[counter] = true
     else
       is_question[counter] = false
@@ -62,4 +62,3 @@ pdfs.each do |individual_pdf|
 
   File.open("#{relative_output_directory + no_suffix_file_name}.csv", "wb") { |f| f.write(csv_content) }
 end
-
