@@ -10,10 +10,6 @@ This is a lightly generalized program built for one use; hopefully it can help y
 Issues it might help you with
 -------------
 
-## Manually creating an Anki deck
+Manually creating an Anki deck: I didn't find many guidelines on formatting Anki imports with attachments. Between the program and the text file, you should be able to save a lot of work in creating your own decks.
 
-I didn't find many guidelines on formatting Anki imports with attachments. Between the program and the text file, you should be able to save a lot of work in creating your own decks.
-
-## Syntax for changing PDF quality in RMagick
-
-I had to play around for a while to figure out the syntax for changing PDF quality.
+Syntax for changing PDF quality in RMagick: I had to play around for a while to figure out the syntax for changing PDF quality.
